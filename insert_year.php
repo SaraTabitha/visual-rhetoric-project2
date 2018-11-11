@@ -1,6 +1,7 @@
 <?php
     require_once('database/initialize.php');
     require_once('functions.php');
+    require_once('display_table.php');
 
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $year= $_POST["year"];
@@ -14,6 +15,9 @@
     /*
     * insert year
     */
+
+    year_table();
+
     if($success){
         ?>
         <div>

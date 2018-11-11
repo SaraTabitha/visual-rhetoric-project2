@@ -32,6 +32,62 @@
         }
           
     }
+    function retrieve_genders(){
+        GLOBAL $db;
+
+        try{
+            $sql = "SELECT * FROM Gender";
+            $statement = $db->prepare($sql);
+            $statement->execute();
+
+            return $statement->fetchAll();
+
+        }catch(PDOException $e){
+            echo "Failed: " . $e->getMessage();
+        }
+    }
+    function retrieve_race(){
+        GLOBAL $db;
+
+        try{
+            $sql = "SELECT * FROM Race";
+            $statement = $db->prepare($sql);
+            $statement->execute();
+
+            return $statement->fetchAll();
+
+        }catch(PDOException $e){
+            echo "Failed: " . $e->getMessage();
+        }
+    }
+    function retrieve_role(){
+        GLOBAL $db;
+
+        try{
+            $sql = "SELECT * FROM Role";
+            $statement = $db->prepare($sql);
+            $statement->execute();
+
+            return $statement->fetchAll();
+
+        }catch(PDOException $e){
+            echo "Failed: " . $e->getMessage();
+        }
+    }
+    function retrieve_occupation(){
+        GLOBAL $db;
+
+        try{
+            $sql = "SELECT * FROM Occupation";
+            $statement = $db->prepare($sql);
+            $statement->execute();
+
+            return $statement->fetchAll();
+
+        }catch(PDOException $e){
+            echo "Failed: " . $e->getMessage();
+        }
+    }
     function retrieve_genres(){
         GLOBAL $db;
 

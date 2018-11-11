@@ -12,12 +12,22 @@
 
     function getYears(){
         $years = retrieve_years();
-        createOptions($years);
+        foreach($years as $item){
+            ?>
+            <option value=" <?= $item['Year'] ?> "> <?= $item['Year'] ?> </option>
+            <?php
+        }
+
     }
 
     function getPublishers(){
         $publishers = retrieve_publishers();
-        createOptions($publishers);
+
+        foreach($publishers as $item){
+            ?>
+            <option value=" <?= $item['Title'] ?> "> <?= $item['Title'] ?> </option>
+            <?php
+        }
     }
 
     function getGenres(){

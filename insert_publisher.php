@@ -1,6 +1,7 @@
 <?php
     require_once('database/initialize.php');
     require_once('functions.php');
+    require_once('display_table.php');
 
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $title= $_POST["title"];
@@ -14,6 +15,8 @@
     /*
     * insert publisher
     */
+    publisher_table();
+    
     if($success){
         ?>
         <div>

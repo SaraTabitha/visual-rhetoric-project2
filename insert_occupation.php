@@ -1,6 +1,7 @@
 <?php
     require_once('database/initialize.php');
     require_once('functions.php');
+    require_once('display_table.php');
 
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $name= $_POST["name"];
@@ -14,6 +15,9 @@
     /*
     * insert occupation
     */
+
+    occupation_table();
+
     if($success){
         ?>
         <div>
