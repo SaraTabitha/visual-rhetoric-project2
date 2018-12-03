@@ -1,0 +1,275 @@
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    background-image: url(gamepad_pattern.png);
+    background-repeat: repeat;
+    background-size:100px;
+    background-color: #ac82d2;
+}
+body{
+    background-color: #ac82d2e6;
+}
+h1, h2, h3, h4, h5 ,h6, p,span{
+    font-family: helvetica;
+    margin: 0 auto;
+}
+.heading{
+ font-family: 'Press Start 2P', cursive;
+ text-align: center;
+ text-shadow: 5px 5px rebeccapurple;
+}
+
+h1,h2{
+    color: white;
+}
+h1,h2,h3,h4, p{
+    padding-left: 20px;
+    color:white;
+}
+ul{
+    padding-left:70px;
+}
+li{
+    padding-left:5px;
+}
+.pink{
+    background-color:pink;
+}
+.blue{
+    background-color:  #89cff0;
+}
+.green{
+    background-color: #abf48d;
+}
+html, .purple{
+    background-color:#ac82d2;
+}
+.purple{
+    color: white;
+}
+img{
+    height: 40%;
+    width: 40%;
+    border-radius: 20px;
+}
+
+
+.fa-female{
+    color: pink;
+    padding: 2px;
+}
+.fa-male{
+    color: lightblue;
+    padding: 5px;
+}
+
+.people{
+    margin: 0 auto;
+    width: 560px;
+}
+.large{
+    font-size: 2em;
+}
+p{
+    font-size: 24px;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+a :hover{
+    color: lightgreen;
+}
+.start{
+    color:lightsalmon;
+}
+#prot_pieChart{
+    background: linear-gradient( 90deg, rebeccapurple, rebeccapurple 50%, #f3d268 0% );
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+#prot_pieChart > p:nth-child(1){
+    width:150px;
+    float:left;
+    top:80px;
+    position: relative;
+    right: 200px;
+    text-align: center;
+    color: rebeccapurple;
+}
+#prot_pieChart > p:nth-child(2){
+float:left;
+position: relative;
+}
+#prot_pieChart > p:nth-child(3){
+float:right;
+position: relative;
+top:80px;
+right:30px;
+}
+#prot_pieChart > p:nth-child(4){
+    text-align: center;
+    width:150px;
+    float:right;
+    position: relative;
+    left: 160px;
+    color: #f3d268;
+}
+
+/* bar graph animation */
+@-webkit-keyframes bar-before{
+    0%{
+      width: 0px;
+    }
+    100%{
+      width: 100%;
+    }
+  }
+  /* bar sizing */
+  .bar1::after{
+    max-width: 50%;
+    background: #7E27E0;
+  }
+  .bar2::after{
+    max-width: 24%;
+    background: #E0277F;
+  }
+  .bar3::after{
+    max-width: 13%;
+    background: #1FCCE6;
+  }
+  .bar4::after{
+    max-width: 8%;
+    background: #1A3B91;
+  }
+  .bar5::after{
+    max-width: 5%;
+    background: #FFC5F8;
+  }
+/* bar graph styling */
+.graph-cont{
+    width: calc(100% - 40px);
+    width: 100%;
+    max-width: 570px;
+    margin: 0 auto;
+  }
+.bar{
+    height: 30px;
+    max-width: 400px;
+    margin: 0 auto 10px auto;
+    line-height: 30px;
+    font-size: 16px;
+    color: white;
+    padding: 0 0 0 10px;
+    position: relative;
+  }
+  .bar::before{
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 30px;
+    top: 0;
+    z-index: 0;
+    background: #ecf0f1;
+  }
+  .bar::after{
+    content: '';
+    /* background: #2ecc71; */
+    height: 30px;
+    transition: 0.7s;
+    display: block;
+    width: 100%;
+    -webkit-animation: bar-before 1 1.8s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+    
+.barText{
+    position: absolute;
+    z-index: 4;
+    color: black;
+}
+.barLabel{
+    position: absolute;
+    z-index: 4;
+    color: white;
+    /* left:-150px; */
+}
+.graph-cont > h1{
+    width:400px;
+    text-align:center;
+}
+
+
+#ga{
+    text-align: center;
+    width: 30px;
+}
+
+svg{
+    width:150px;
+    height:300px;
+}
+#people{
+    margin: 0 auto;
+    width:529px;
+    height:300px;
+    
+}
+#people > svg,#people > div{
+    float: left;
+}
+#people > div{
+    margin-top:100px;
+    padding-left:10px;
+    padding-right:10px;
+}
+#people > div > div:nth-child(1){
+    width:100px;
+}
+#people > div > div > div{
+    float:left;
+}
+#people > div > div > p{
+    float:right;
+    padding:0;
+    margin:0;
+}
+#people > div > div:nth-child(2){
+    width:195px;
+}
+#people > div > div:nth-child(3){
+    width:120px;
+}
+/* #people > div:nth-child(3){
+    width:100px;
+
+}
+#people > div:nth-child(3)>div{
+   float:left;
+
+}
+#people > div>div{
+    float:left;
+ 
+ }
+#people > div>p{
+    float:right;
+    padding:0;
+    margin:0;
+
+}
+#people > div:nth-child(4){
+    width:195px;
+}
+#people > div:nth-child(5){
+    width:120px;
+} */
